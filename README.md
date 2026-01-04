@@ -1,4 +1,4 @@
-This is a novel reasoning optimization framework that equips Large Reasoning Models (LRMs) with meta-cognitive self-regulation capabilities. It significantly reduces redundant reasoning and generation overhead without sacrificing accuracy. MERA explicitly decouples the reasoning process and the control mechanism, allowing fine-grained optimization of model behavior.
+This is a novel reasoning optimization framework that equips Large Reasoning Models (LRMs) with meta-cognitive self-regulation capabilities. It significantly reduces redundant reasoning and generation overhead without sacrificing accuracy. It explicitly decouples the reasoning process and the control mechanism, allowing fine-grained optimization of model behavior.
 
 ## 🔍 Key Features
 
@@ -39,7 +39,7 @@ accelerate launch qlora.py \
 
 ------
 
-### 2. Run MERA Alternating Control Module with Inference Configuration
+### 2. Run Alternating Control Module with Inference Configuration
 
 ```
 target_model_name: deepseek-ai/deepseek-14B
