@@ -1,0 +1,51 @@
+accelerate launch  qlora.py \
+--model_name_or_path  \
+--dataset_path  \
+--output_dir  \
+--prompt_key prompt \
+--label_key label \
+--do_train True \
+--max_steps 1000 \
+--learning_rate 0.000001 \		        
+--lr_scheduler_type constant \
+--warmup_ratio 0.0 \
+--source_max_len 4096 \			        
+--target_max_len 4096 \			        
+--per_device_train_batch_size 1 \   
+--gradient_accumulation_steps 8 \   
+--optim paged_adamw_32bit \
+--weight_decay 0.01 \
+--adam_beta2 0.999 \
+--max_grad_norm 0.3 \
+--lora_modules all \
+--lora_r 64 \
+--lora_alpha 16 \
+--lora_dropout 0.05 \
+--bf16 True \
+--fp16 False \
+--bits 4 \
+--double_quant True \
+--quant_type nf4 \
+--gradient_checkpointing True \
+--do_eval False \
+--do_mmlu_eval False \
+--evaluation_strategy steps \
+--eval_steps 10000 \
+--eval_dataset_size 1024 \
+--max_eval_samples 1000 \
+--per_device_eval_batch_size 1 \
+--logging_strategy steps \
+--logging_steps 10 \
+--save_strategy steps \
+--save_steps 100 \
+--save_total_limit 40 \
+--max_new_tokens 32 \
+--dataloader_num_workers 3 \
+--group_by_length True \
+--remove_unused_columns False \
+--log_aml_metrics True \
+--seed 0 \
+--data_seed 42 \
+--ddp_find_unused_parameters False \
+--report_to wandb \
+--trust_remote_code False
