@@ -1,6 +1,4 @@
-# MERA: Meta-Cognitive Reasoning Architecture
-
-MERA is a novel reasoning optimization framework that equips Large Reasoning Models (LRMs) with meta-cognitive self-regulation capabilities. It significantly reduces redundant reasoning and generation overhead without sacrificing accuracy. MERA explicitly decouples the reasoning process and the control mechanism, allowing fine-grained optimization of model behavior.
+This is a novel reasoning optimization framework that equips Large Reasoning Models (LRMs) with meta-cognitive self-regulation capabilities. It significantly reduces redundant reasoning and generation overhead without sacrificing accuracy. MERA explicitly decouples the reasoning process and the control mechanism, allowing fine-grained optimization of model behavior.
 
 ## 🔍 Key Features
 
